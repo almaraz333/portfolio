@@ -1,10 +1,11 @@
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 import "fontsource-fira-mono";
 
 import "./scss/app.scss";
 
 import { NavBar } from "./components/NavBar";
+import { SideIcons } from "./components/SideIcons";
+import { MainContent } from "./components/mainContent/MainContent";
 
 const theme = createMuiTheme({
   palette: {
@@ -25,8 +26,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="app">
         <NavBar />
-        <h1 className="name">Colton Almaraz</h1>
-        <h2 className="sub-name">Software Developer | Experience Architect</h2>
+        <SideIcons />
+        <MainContent />
       </div>
     </ThemeProvider>
   );
