@@ -2,7 +2,7 @@ import logo from "../images/logo.png";
 
 export const Logo = () => {
   return (
-    <div>
+    <div className="logo">
       <img
         src={logo}
         alt="logo, upside down triangle with C"
