@@ -10,9 +10,16 @@ export const Skill = ({ label, stars }: SkillProps) => {
   const star = <StarBorderIcon color="primary" fontSize="small" />;
   return (
     <Box display="flex" alignItems="center">
-      <Typography variant="h5" color="primary">
+      <h4
+        style={{
+          opacity: ".8",
+          color: "#ffffff",
+          fontWeight: "bold",
+          marginRight: ".333rem",
+        }}
+      >
         {`${label}: `}
-      </Typography>
+      </h4>
 
       {new Array(stars).fill(star)}
     </Box>

@@ -7,15 +7,15 @@ export type Skill = {
 };
 export const Skills = () => {
   const skills: Skill[] = [
-    { skill: "yeet", stars: 5 },
-    { skill: "yeet", stars: 1 },
+    { skill: "Typescript", stars: 5 },
+    { skill: "React", stars: 4 },
     { skill: "yeet", stars: 3 },
     { skill: "yeet", stars: 2 },
     { skill: "yeet", stars: 5 },
   ];
   return (
     <div>
-      <h3>Some of my top skills:</h3>
+      <h3 style={{ fontSize: "1.5rem" }}>Some of my top skills:</h3>
       <br />
       <Grid container spacing={1}>
         {skills.map((skill) => (
