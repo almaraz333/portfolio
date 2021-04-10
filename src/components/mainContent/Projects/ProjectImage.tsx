@@ -6,8 +6,8 @@ export const ProjectImage = () => {
       className="project-image"
       src={Cat}
       alt="logo, upside down triangle with C"
-      height="450"
-      width="600"
+      height="575"
+      width="750"
     />
   );
 };

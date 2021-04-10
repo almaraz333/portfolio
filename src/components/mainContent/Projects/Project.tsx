@@ -1,4 +1,3 @@
-import { Paper } from "@material-ui/core";
 import { ProjectDescription } from "./ProjectDescription";
 import { ProjectImage } from "./ProjectImage";
 
