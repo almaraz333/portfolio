@@ -7,11 +7,11 @@ export type Skill = {
 };
 export const Skills = () => {
   const skills: Skill[] = [
-    { skill: "Typescript", stars: 5 },
-    { skill: "React", stars: 4 },
-    { skill: "yeet", stars: 3 },
-    { skill: "yeet", stars: 2 },
-    { skill: "yeet", stars: 5 },
+    { skill: "Typescript", stars: 4 },
+    { skill: "React", stars: 5 },
+    { skill: "Sass/CSS", stars: 5 },
+    { skill: "GraphQL", stars: 3 },
+    { skill: "Apollo", stars: 3 },
   ];
   return (
     <div>
