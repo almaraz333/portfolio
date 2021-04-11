@@ -1,7 +1,10 @@
 export const SideIcons = () => {
   return (
-    <div className="side">
-      <div className="side-line" />
-    </div>
+    <ul className="side">
+      <h2 className="text-white">Yo</h2>
+      <h2 className="text-white">Yo</h2>
+      <h2 className="text-white">Yo</h2>
+      <h2 className="text-white">Yo</h2>
+    </ul>
   );
 };

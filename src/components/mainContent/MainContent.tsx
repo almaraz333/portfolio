@@ -5,7 +5,11 @@ import { Bio } from "./Bio";
 import { MainTitle } from "./MainTitle";
 import { Projects } from "./Projects/Projects";
 
-export const MainContent = () => {
+export type MainContentProps = {
+  screenType?: "mobile" | "mid" | "desktop";
+};
+
+export const MainContent = ({ screenType }: MainContentProps) => {
   return (
     <div className="main">
       <MainTitle />

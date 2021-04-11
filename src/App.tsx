@@ -6,6 +6,9 @@ import "./scss/app.scss";
 import { NavBar } from "./components/NavBar";
 import { SideIcons } from "./components/SideIcons";
 import { MainContent } from "./components/mainContent/MainContent";
+import { MobileNav } from "./components/MobileNav";
+
+import { useScreenType } from "./Hooks";
 
 const theme = createMuiTheme({
   palette: {
@@ -22,12 +25,25 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const screenType = useScreenType();
+
+  if (screenType === "mobile") {
+    return (
+      <ThemeProvider theme={theme}>
+        <div className="app bg-background h-100 w-100">
+          <MobileNav />
+          <MainContent />
+        </div>
+      </ThemeProvider>
+    );
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <div className="app bg-background h-100 w-100">
         <NavBar />
         <SideIcons />
-        <MainContent />
+        <MainContent screenType={screenType} />
       </div>
     </ThemeProvider>
   );

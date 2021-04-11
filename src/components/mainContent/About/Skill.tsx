@@ -1,4 +1,4 @@
-import { Box, Typography } from "@material-ui/core/";
+import { Box } from "@material-ui/core/";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 
 type SkillProps = {
@@ -9,7 +9,7 @@ type SkillProps = {
 export const Skill = ({ label, stars }: SkillProps) => {
   const star = <StarBorderIcon color="primary" fontSize="small" />;
   return (
-    <Box display="flex" alignItems="center">
+    <Box display="flex" alignItems="center" className="py-3 text-lg">
       <h4
         style={{
           opacity: ".8",
