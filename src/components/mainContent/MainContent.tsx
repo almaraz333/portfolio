@@ -4,6 +4,8 @@ import { Skills } from "./About/Skills";
 import { Bio } from "./Bio";
 import { MainTitle } from "./MainTitle";
 import { Projects } from "./Projects/Projects";
+import { Contact } from "./Contact/Contact";
+import LoadingScreen from "../LoadingScreen";
 
 export type MainContentProps = {
   screenType?: "mobile" | "mid" | "desktop";
@@ -13,12 +15,15 @@ export const MainContent = ({ screenType }: MainContentProps) => {
   return (
     <div className="main">
       <MainTitle />
+      <LoadingScreen />
       <Bio />
       <Spacer />
       <About />
       <Skills />
       <Spacer />
       <Projects />
+      <Spacer />
+      <Contact />
     </div>
   );
 };

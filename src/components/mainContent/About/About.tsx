@@ -1,8 +1,7 @@
 export const About = () => {
   return (
-    <div className="about">
-      {" "}
-      <h2 className="sub-name pb-10 text-white">About Me</h2>
+    <div className="about mx-auto" id="about">
+      <h2 className="sub-name pb-10 text-white text-center">About Me</h2>
       <p>
         ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarsdsg jg fhskhf
         eh fs ifhslighoew kjdghb;vausidkgjbv;iukj sdkufg slhf slihgwe losjafla

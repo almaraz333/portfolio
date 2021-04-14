@@ -13,13 +13,16 @@ import { useScreenType } from "./Hooks";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#4BB0ED",
+      main: "#1579B4",
     },
     secondary: {
       main: "#11cb5f",
     },
+    success: {
+      main: "#4ce649",
+    },
     background: {
-      default: "#252525",
+      default: "#3c404a",
     },
   },
 });

@@ -16,9 +16,9 @@ export const SideIcons = () => {
       <a href="https://www.linkedin.com/in/coltonalmaraz/">
         <img
           src={LinkedIn}
-          alt="github logo"
+          alt="linked in logo"
           height={30}
-          width={30}
+          width={35}
           className="mb-5"
         />
       </a>

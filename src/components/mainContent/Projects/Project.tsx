@@ -4,46 +4,40 @@ import { TechUsed } from "./TechUsed";
 
 import { useScreenType } from "../../../Hooks";
 
-import {
-  Card,
-  CardActions,
-  CardContent,
-  Button,
-  CardMedia,
-} from "@material-ui/core";
-import Cat from "../../../images/ya.png";
+import { Card, CardContent, CardMedia } from "@material-ui/core";
+
+import { TechProps } from "./Projects";
 
 export type ProjectProps = {
   className?: string;
+  image: string;
+  title: string;
+  tech: TechProps[];
 };
-export const Project = ({ className }: ProjectProps) => {
+export const Project = ({ className, image, title, tech }: ProjectProps) => {
   const screenType = useScreenType();
   return (
     <>
       {screenType === "desktop" ? (
         <div className="project">
-          <h3 className={className === "odd" ? "" : "text-right"}>
-            Title of a project
-          </h3>
+          <h3 className={className === "odd" ? "" : "text-right"}>{title}</h3>
           <div className="project-content-container">
-            <ProjectImage className={className} />
+            <ProjectImage image={image} className={className} />
             <ProjectDescription className={className} />
-            <TechUsed className={className} />
+            <TechUsed className={className} tech={tech} />
           </div>
         </div>
       ) : (
         <Card variant="outlined" className="project-card">
           <CardMedia
-            src={Cat}
+            src={image}
             title="Contemplative Reptile"
             style={{ height: "70%" }}
             component="img"
           />
-          <CardContent>
-            <h1 className="text-center mb-3 project-title">
-              Title of a project
-            </h1>
-            <TechUsed />
+          <CardContent className="card-content">
+            <h1 className="text-center mb-3 project-title">{title}</h1>
+            <TechUsed tech={tech} />
           </CardContent>
         </Card>
       )}
