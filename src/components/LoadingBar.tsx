@@ -2,16 +2,22 @@ import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { useEffect, useRef, useState } from "react";
 
+import { useSetRecoilState } from "recoil";
+import { showLoadingScreenState } from "../atoms";
+
 const useStyles = makeStyles({
   root: {
     width: "100%",
+    height: "100%",
+    backgroundColor: "",
   },
 });
 
-export default function LinearBuffer() {
-  const classes = useStyles();
+export const LoadingBar = () => {
   const [progress, setProgress] = useState(50);
   const [buffer, setBuffer] = useState(10);
+
+  const setShowLoadingScreen = useSetRecoilState(showLoadingScreenState);
 
   const progressRef = useRef(() => {});
   useEffect(() => {
@@ -19,8 +25,9 @@ export default function LinearBuffer() {
       if (progress > 100) {
         setProgress(0);
         setBuffer(10);
+        setShowLoadingScreen(false);
       } else {
-        const diff = Math.random() * 37;
+        const diff = Math.random() * 25;
         const diff2 = Math.random() * 10;
         setProgress(progress + diff);
         setBuffer(progress + diff + diff2);
@@ -39,8 +46,6 @@ export default function LinearBuffer() {
   }, []);
 
   return (
-    <div className={classes.root}>
-      <LinearProgress variant="buffer" value={progress} valueBuffer={buffer} />
-    </div>
+    <LinearProgress variant="buffer" value={progress} valueBuffer={buffer} />
   );
-}
+};

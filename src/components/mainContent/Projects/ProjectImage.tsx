@@ -5,11 +5,11 @@ export type ProjectImageProps = {
 export const ProjectImage = ({ className, image }: ProjectImageProps) => {
   return (
     <img
-      className={`project-image ${className}`}
       src={image}
-      alt="logo, upside down triangle with C"
-      height="575"
+      alt="representing a project"
+      height="595"
       width="750"
+      className={`project-image ${className}`}
     />
   );
 };

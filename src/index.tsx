@@ -6,10 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 
 import "./scss/app.scss";
 import "./fonts/FiraCode-VariableFont_wght.ttf";
+import { RecoilRoot } from "recoil";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
   </React.StrictMode>,
   document.getElementById("root")
 );

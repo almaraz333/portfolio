@@ -13,8 +13,19 @@ export type ProjectProps = {
   image: string;
   title: string;
   tech: TechProps[];
+  description: string;
+  link: string;
+  type: "demo" | "repo";
 };
-export const Project = ({ className, image, title, tech }: ProjectProps) => {
+export const Project = ({
+  className,
+  image,
+  title,
+  tech,
+  description,
+  link,
+  type,
+}: ProjectProps) => {
   const screenType = useScreenType();
   return (
     <>
@@ -23,7 +34,12 @@ export const Project = ({ className, image, title, tech }: ProjectProps) => {
           <h3 className={className === "odd" ? "" : "text-right"}>{title}</h3>
           <div className="project-content-container">
             <ProjectImage image={image} className={className} />
-            <ProjectDescription className={className} />
+            <ProjectDescription
+              className={className}
+              description={description}
+              link={link}
+              type={type}
+            />
             <TechUsed className={className} tech={tech} />
           </div>
         </div>
@@ -34,10 +50,18 @@ export const Project = ({ className, image, title, tech }: ProjectProps) => {
             title="Contemplative Reptile"
             style={{ height: "70%" }}
             component="img"
+            className="card-image"
           />
           <CardContent className="card-content">
             <h1 className="text-center mb-3 project-title">{title}</h1>
             <TechUsed tech={tech} />
+            <ProjectDescription
+              className={className}
+              description={description}
+              link={link}
+              type={type}
+              card={true}
+            />
           </CardContent>
         </Card>
       )}
