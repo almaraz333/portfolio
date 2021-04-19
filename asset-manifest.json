@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/almaraz333/portfolio.github.io/static/css/main.45bea78b.chunk.css",
+    "main.js": "/almaraz333/portfolio.github.io/static/js/main.4f884e60.chunk.js",
+    "main.js.map": "/almaraz333/portfolio.github.io/static/js/main.4f884e60.chunk.js.map",
+    "runtime-main.js": "/almaraz333/portfolio.github.io/static/js/runtime-main.0047cee1.js",
+    "runtime-main.js.map": "/almaraz333/portfolio.github.io/static/js/runtime-main.0047cee1.js.map",
+    "static/css/2.e4aa939f.chunk.css": "/almaraz333/portfolio.github.io/static/css/2.e4aa939f.chunk.css",
+    "static/js/2.429c7498.chunk.js": "/almaraz333/portfolio.github.io/static/js/2.429c7498.chunk.js",
+    "static/js/2.429c7498.chunk.js.map": "/almaraz333/portfolio.github.io/static/js/2.429c7498.chunk.js.map",
+    "static/js/3.c70abd1f.chunk.js": "/almaraz333/portfolio.github.io/static/js/3.c70abd1f.chunk.js",
+    "static/js/3.c70abd1f.chunk.js.map": "/almaraz333/portfolio.github.io/static/js/3.c70abd1f.chunk.js.map",
+    "index.html": "/almaraz333/portfolio.github.io/index.html",
+    "static/css/2.e4aa939f.chunk.css.map": "/almaraz333/portfolio.github.io/static/css/2.e4aa939f.chunk.css.map",
+    "static/css/main.45bea78b.chunk.css.map": "/almaraz333/portfolio.github.io/static/css/main.45bea78b.chunk.css.map",
+    "static/js/2.429c7498.chunk.js.LICENSE.txt": "/almaraz333/portfolio.github.io/static/js/2.429c7498.chunk.js.LICENSE.txt",
+    "static/media/ColtonAlmaraz_Resume.6efd7a69.pdf": "/almaraz333/portfolio.github.io/static/media/ColtonAlmaraz_Resume.6efd7a69.pdf",
+    "static/media/app.scss": "/almaraz333/portfolio.github.io/static/media/FiraCode-VariableFont_wght.2ddfc9fa.ttf",
+    "static/media/biggby.d92977f7.png": "/almaraz333/portfolio.github.io/static/media/biggby.d92977f7.png",
+    "static/media/index.css": "/almaraz333/portfolio.github.io/static/media/fira-mono-latin-ext-400-normal.bd94e609.woff2",
+    "static/media/nfl_python.3c065fad.png": "/almaraz333/portfolio.github.io/static/media/nfl_python.3c065fad.png",
+    "static/media/symplee.5a5a00bd.png": "/almaraz333/portfolio.github.io/static/media/symplee.5a5a00bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0047cee1.js",
+    "static/css/2.e4aa939f.chunk.css",
+    "static/js/2.429c7498.chunk.js",
+    "static/css/main.45bea78b.chunk.css",
+    "static/js/main.4f884e60.chunk.js"
+  ]
+}
