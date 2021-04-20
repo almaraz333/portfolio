@@ -1,13 +1,13 @@
 import Grid from "@material-ui/core/Grid";
 import { Skill } from "./Skill";
 
-export type Skill = {
+export type SkillsProps = {
   skill: string;
   stars: number;
 };
 
 export const Skills = () => {
-  const skills: Skill[] = [
+  const skills: SkillsProps[] = [
     { skill: "Typescript", stars: 4 },
     { skill: "React", stars: 5 },
     { skill: "Redux", stars: 5 },

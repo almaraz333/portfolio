@@ -1,5 +1,5 @@
 import { Box } from "@material-ui/core/";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+import { StarBorderOutlined } from "@material-ui/icons";
 
 type SkillProps = {
   label: string;
@@ -7,7 +7,7 @@ type SkillProps = {
 };
 
 export const Skill = ({ label, stars }: SkillProps) => {
-  const star = <StarBorderIcon color="primary" fontSize="small" />;
+  const star = <StarBorderOutlined color="primary" fontSize="small" />;
   return (
     <Box display="flex" alignItems="center" className="py-3 text-lg">
       <h4

@@ -1,17 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { useEffect, useRef, useState } from "react";
 
 import { useSetRecoilState } from "recoil";
 import { showLoadingScreenState } from "../atoms";
-
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-    height: "100%",
-    backgroundColor: "",
-  },
-});
 
 export const LoadingBar = () => {
   const [progress, setProgress] = useState(50);
