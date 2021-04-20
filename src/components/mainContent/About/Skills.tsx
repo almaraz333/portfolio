@@ -18,12 +18,12 @@ export const Skills = () => {
     { skill: "SQL", stars: 3 },
   ];
   return (
-    <div>
+    <div className="skills-container">
       <h3 style={{ fontSize: "1.5rem" }}>Some of my top skills:</h3>
       <br />
-      <Grid container spacing={1}>
+      <Grid className="skills" container spacing={1}>
         {skills.map((skill) => (
-          <Grid item xs={6}>
+          <Grid item className="skill" xs={6}>
             <Skill label={skill.skill} stars={skill.stars} />
           </Grid>
         ))}
