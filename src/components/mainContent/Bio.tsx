@@ -2,25 +2,15 @@ export const Bio = () => {
   return (
     <div className="bio">
       <p>
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarsdsg jg fhskhf
-        eh fs ifhslighoew kjdghb;vausidkgjbv;iukj sdkufg slhf slihgwe losjafla
-        jspojwp le jfo;aj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;
-        iukj ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhd
-        gbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;
-        gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjb
-        v;iukj
+        Hey! I'm Colton Almaraz and I'm a software developer. I make digital
+        spaces for everyone and everything.
         <br />
         <br />
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
-        ksajdgh;daskljgh;sgkjwah;gkjawehglukwr;gowuiaekrhdgbuiarskjdghb;vausidkgjbv;iukj
+        I'm a mostly remote dev who creates minimal, effective products and
+        sometimes has a hand in designing them. Whether it's mockups,
+        prototypes, back-end, or front-end I have the skills required to create
+        and experience the use will never forget. I focus on products from a
+        human perspective as well as business.
       </p>
     </div>
   );

@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <div className="contact" id="Contact">
       <h2 className="sub-name pb-10 text-white text-center">Contact</h2>
       <p className="text-secondary opacity-80 text-center">
         Say hi!

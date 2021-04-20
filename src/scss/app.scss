@@ -21,7 +21,7 @@ a{
 }
 p{
     opacity: .75;
-    font-size: clamp(.5rem, 2.5vw, 1rem) !important;
+    font-size: clamp(.5rem, 1.3rem, 1.5rem) !important;
 
 }
 .app{
@@ -87,8 +87,11 @@ p{
 }
 .main{
     grid-area: main;
+    .about{
+        padding: 5.333% 15% 0 0;
+    }
     .bio{
-        padding: 5.333% 0 0 0;
+        padding: 5.333% 15% 0 0;
     }
     .name{
         font-size: clamp(3rem,5rem,6rem);
