@@ -12,19 +12,19 @@ export const NavBar = () => {
         <h3 className="text-primary font-normal text-sm px-5">
           00.{" "}
           <span className="text-white text-base">
-            <a href="#about">About</a>
+            <a href="#About">About</a>
           </span>
         </h3>
         <h3 className="text-primary font-normal text-sm px-5">
           01.{" "}
           <span className="text-white text-base">
-            <a href="#projects">Projects</a>
+            <a href="#Projects">Projects</a>
           </span>
         </h3>
         <h3 className="text-primary font-normal text-sm px-5">
           02.{" "}
           <span className="text-white text-base">
-            <a href="#contact">Contact</a>
+            <a href="#Contact">Contact</a>
           </span>
         </h3>
         <Button

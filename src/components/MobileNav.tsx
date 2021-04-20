@@ -1,22 +1,13 @@
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
-import { Menu, Close } from "@material-ui/icons";
+import { Menu, Close, Mail, DeveloperMode, Person } from "@material-ui/icons";
 
 export const MobileNav = () => {
-  const [state, setState] = useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (open: boolean) => (
@@ -57,13 +48,21 @@ export const MobileNav = () => {
                 <Close />
               </ListItemIcon>
             </ListItem>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
+            {["About", "Projects", "Contact"].map((item) => (
+              <a href={`#${item}`} key={item}>
+                <ListItem button>
+                  <ListItemIcon>
+                    {item === "About" ? (
+                      <Person />
+                    ) : item === "Projects" ? (
+                      <DeveloperMode />
+                    ) : (
+                      <Mail />
+                    )}
+                  </ListItemIcon>
+                  <ListItemText primary={item} />
+                </ListItem>
+              </a>
             ))}
           </List>
         </div>

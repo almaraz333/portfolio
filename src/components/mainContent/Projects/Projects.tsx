@@ -30,8 +30,8 @@ export const Projects = () => {
     { tech: "HTML" },
   ];
   return (
-    <div className="projects-container" id="projects">
-      <h2 className="sub-name pb-10 text-white text-center">Some of my work</h2>
+    <div className="projects-container" id="Projects">
+      <h2 className="sub-name pb-10 text-white text-center">Projects</h2>
       <Box
         display="flex"
         flexWrap="wrap"
