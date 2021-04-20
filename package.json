@@ -1,6 +1,5 @@
 {
   "name": "react-portfolio",
-  "homepage": "http://almaraz333.github.io",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",

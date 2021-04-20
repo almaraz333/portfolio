@@ -1,4 +1,3 @@
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import "fontsource-fira-mono";
 
 import "./scss/app.scss";
@@ -14,23 +13,6 @@ import { useRecoilValue } from "recoil";
 import { showLoadingScreenState } from "./atoms";
 import { Footer } from "./components/Footer";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#1579B4",
-    },
-    secondary: {
-      main: "#11cb5f",
-    },
-    success: {
-      main: "#4ce649",
-    },
-    background: {
-      default: "#3c404a",
-    },
-  },
-});
-
 function App() {
   const screenType = useScreenType();
 
@@ -42,25 +24,21 @@ function App() {
 
   if (screenType === "mobile") {
     return (
-      <ThemeProvider theme={theme}>
-        <div className="app bg-background h-100 w-100">
-          <MobileNav />
-          <MainContent />
-          <Footer />
-        </div>
-      </ThemeProvider>
+      <div className="app bg-background h-100 w-100">
+        <MobileNav />
+        <MainContent />
+        <Footer />
+      </div>
     );
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className="app bg-background h-100 w-100">
-        <NavBar />
-        <SideIcons />
-        <MainContent screenType={screenType} />
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="app bg-background h-100 w-100">
+      <NavBar />
+      <SideIcons />
+      <MainContent screenType={screenType} />
+      <Footer />
+    </div>
   );
 }
 
