@@ -6,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Menu, Close, Mail, DeveloperMode, Person } from "@material-ui/icons";
+import Pdf from "../Assets/ColtonAlmaraz_Resume.pdf";
 
 export const MobileNav = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +27,12 @@ export const MobileNav = () => {
 
   return (
     <div className="mobile-nav">
-      <Button variant="outlined" color="primary" className="button px-5 ">
+      <Button
+        variant="outlined"
+        color="primary"
+        className="button px-5"
+        href={Pdf}
+      >
         Resume
       </Button>
       <Button
