@@ -4,11 +4,15 @@ import { Box } from "@material-ui/core";
 import Biggby from "../../../images/biggby.png";
 import Python from "../../../images/nfl_python.png";
 import Symplee from "../../../images/symplee.png";
+import GameOfLife from "../../../images/GameOfLife.png";
+import Casino from "../../../images/casinoDice.png";
 
 import {
   biggbyText,
   footballSearcherText,
   sympleeText,
+  casinoText,
+  gameOfLifeText,
 } from "../../../Assets/Text";
 
 export type TechProps = {
@@ -29,6 +33,15 @@ export const Projects = () => {
     { tech: "Beautiful Soup" },
     { tech: "HTML" },
   ];
+
+  const gameOfLifeTech: TechProps[] = [
+    { tech: "Python" },
+    { tech: "PyGame" },
+    { tech: "Numpy" },
+  ];
+
+  const casinoGameTech: TechProps[] = [{ tech: "C++" }];
+
   return (
     <div className="projects-container" id="Projects">
       <h2 className="sub-name pb-10 text-white text-center">Projects</h2>
@@ -46,6 +59,24 @@ export const Projects = () => {
           description={biggbyText}
           link="https://app.biggby.com"
           type="demo"
+        />
+        <Project
+          title="Conway's Game of Life in Python"
+          image={GameOfLife}
+          className="even"
+          tech={gameOfLifeTech}
+          description={gameOfLifeText}
+          link="https://github.com/almaraz333/conways-game-of-life"
+          type="repo"
+        />
+        <Project
+          title="Casino Game in C++"
+          image={Casino}
+          className="odd"
+          tech={casinoGameTech}
+          description={casinoText}
+          link="https://github.com/almaraz333/casino"
+          type="repo"
         />
         <Project
           title="Symplee"
