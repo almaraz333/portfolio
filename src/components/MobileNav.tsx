@@ -6,24 +6,23 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Menu, Close, Mail, DeveloperMode, Person } from "@material-ui/icons";
-import Pdf from "../Assets/ColtonAlmaraz_Resume.pdf";
+import Pdf from "../Assets/AlmarazColton_resume.pdf";
 
 export const MobileNav = () => {
   const [open, setOpen] = useState(false);
 
-  const toggleDrawer = (open: boolean) => (
-    event: React.KeyboardEvent | React.MouseEvent
-  ) => {
-    if (
-      event.type === "keydown" &&
-      ((event as React.KeyboardEvent).key === "Tab" ||
-        (event as React.KeyboardEvent).key === "Shift")
-    ) {
-      return;
-    }
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return;
+      }
 
-    setOpen(open);
-  };
+      setOpen(open);
+    };
 
   return (
     <div className="mobile-nav">

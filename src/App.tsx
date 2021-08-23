@@ -6,21 +6,12 @@ import { NavBar } from "./components/NavBar";
 import { SideIcons } from "./components/SideIcons";
 import { MainContent } from "./components/mainContent/MainContent";
 import { MobileNav } from "./components/MobileNav";
-import { LoadingScreen } from "./Views/LoadingScreen/LoadingScreen";
 
 import { useScreenType } from "./Hooks";
-import { useRecoilValue } from "recoil";
-import { showLoadingScreenState } from "./atoms";
 import { Footer } from "./components/Footer";
 
 function App() {
   const screenType = useScreenType();
-
-  const showLoadingScreen = useRecoilValue(showLoadingScreenState);
-
-  if (showLoadingScreen) {
-    return <LoadingScreen />;
-  }
 
   if (screenType === "mobile") {
     return (
